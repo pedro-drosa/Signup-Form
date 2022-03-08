@@ -1,0 +1,17 @@
+.signup {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+
+  section {
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 4rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+  }
+}

@@ -1,5 +1,7 @@
+import SignUp from './pages/SignUp';
+
 const App = () => {
-  return <h1>React App - Vite</h1>;
+  return <SignUp />;
 };
 
 export default App;

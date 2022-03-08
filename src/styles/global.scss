@@ -16,7 +16,13 @@
 
 body {
   background: var(--Red);
+  background-image: url('../assets/bg-intro-desktop.png');
+  background-size: cover;
   color: var(--White);
+
+  @media (max-width: 375px) {
+    background-image: url('../assets/bg-intro-mobile.png');
+  }
 }
 
 a,
@@ -32,4 +38,5 @@ a {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  border: 1px solid #000;
 }
