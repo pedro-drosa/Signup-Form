@@ -1,17 +1,44 @@
 .signup {
-  display: grid;
-  grid-template-columns: 1.2fr 2fr;
+  display: flex;
+  align-items: center;
+}
 
-  section {
+.content {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+
+  div {
+    margin: 30px;
+  }
+
+  & > div {
     h1 {
       font-size: 3rem;
       font-weight: 700;
       line-height: 4rem;
       margin-bottom: 1rem;
+      max-width: 500px;
     }
     p {
       font-size: 1rem;
       line-height: 2rem;
+      max-width: 500px;
+      color: var(--Grayish-Blue);
     }
+  }
+}
+
+.link {
+  background-color: var(--Blue);
+  display: block;
+  text-align: center;
+
+  span {
+    font-weight: 600;
   }
 }
