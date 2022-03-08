@@ -1,6 +1,5 @@
 .label {
   opacity: 0;
-  font-size: 0rem;
 }
 
 .input {
@@ -10,9 +9,34 @@
   padding: 15px 40px;
   border: 1px solid var(--Grayish-Blue);
   outline: none;
-  margin: 10px 0;
+  margin-bottom: 5px;
 }
 
 .input:focus {
   border: 1px solid var(--Blue);
+}
+
+input.error {
+  border: 1px solid var(--Red);
+  color: var(--Red);
+}
+
+span.error {
+  font-size: 0.8rem;
+  text-align: right;
+  display: block;
+  margin-bottom: -19px;
+  color: var(--Red);
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+
+  img {
+    position: absolute;
+    right: 15px;
+  }
 }

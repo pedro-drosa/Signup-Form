@@ -1,20 +1,30 @@
 import { InputHTMLAttributes } from 'react';
 
 import styles from './styles.module.scss';
+import ErrorSvg from '../../assets/icon-error.svg';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  id: string;
   name: string;
   label: string;
+  error: null | string;
 }
 
-const Input = ({ id, name, label, ...props }: InputProps) => {
+const Input = ({ name, label, error, ...props }: InputProps) => {
   return (
     <>
-      <label className={styles.label} htmlFor={id}>
+      <label className={styles.label} htmlFor={name}>
         {label}
       </label>
-      <input className={styles.input} id={id} name={name} {...props} />
+      <div className={styles.inputWrapper}>
+        <input
+          id={name}
+          className={`${styles.input} ${error ? styles.error : ''}`}
+          name={name}
+          {...props}
+        />
+        {error && <img src={ErrorSvg} />}
+      </div>
+      {error && <span className={error ? styles.error : ''}>{`${error}`}</span>}
     </>
   );
 };
