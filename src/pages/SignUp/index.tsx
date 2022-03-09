@@ -1,3 +1,4 @@
+import { FormEvent } from 'react';
 import useForm from '../../hooks/useForm';
 
 import Button from '../../components/Button';
@@ -10,6 +11,15 @@ const SignUp = () => {
   const lastname = useForm(' ');
   const email = useForm('email');
   const password = useForm(' ');
+
+  function handleSubmit(event: FormEvent) {
+    event.preventDefault();
+
+    firstname.validate();
+    lastname.validate();
+    email.validate();
+    password.validate();
+  }
 
   return (
     <main className={styles.signup}>
@@ -27,7 +37,7 @@ const SignUp = () => {
           <a className={`btn ${styles.link}`}>
             <span>Try it free 7 days</span> then $20/mo. thereafter
           </a>
-          <form className={styles.form}>
+          <form className={styles.form} onSubmit={handleSubmit}>
             <Input
               name="firstname"
               label="First Name"
