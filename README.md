@@ -14,7 +14,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Vite](https://vitejs.dev/)
 
 ## 💻 Projeto
-Minha solução para um dos desafios do site [frontendmentor](https://www.frontendmentor.io/).<br/>
+Minha solução para um dos desafios do site [frontend-mentor](https://www.frontendmentor.io/).<br/>
 O desafio era criar um formulário de inscrição com base no layout proposto.
 
 Os usuários devem ser capazes de:<br/>
@@ -22,7 +22,7 @@ Os usuários devem ser capazes de:<br/>
 - [X] Receber uma mensagem de erro quando qualquer campo estiver vazio.
 - [X] Receber uma mensagem de erro quando o endereço de e-mail estiver no formato incorreto.
 
-<!-- <img alt="Projeto Dogs" src="https://res.cloudinary.com/pedro-drosa/image/upload/v1646531919/Dogs_pshbqm.png"> -->
+<img alt="Projeto Dogs" src="https://res.cloudinary.com/pedro-drosa/image/upload/v1646829969/Signup-Form_lk1ile.png">
 
 ### Pré-requisitos
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: [Git](https://git-scm.com), [NodeJS](https://nodejs.org), [Yarn](https://classic.yarnpkg.com).
