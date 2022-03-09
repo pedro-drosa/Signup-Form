@@ -7,9 +7,10 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
   error: null | string;
+  validate: (data: string) => boolean;
 }
 
-const Input = ({ name, label, error, ...props }: InputProps) => {
+const Input = ({ name, label, error, validate, ...props }: InputProps) => {
   return (
     <>
       <label className={styles.label} htmlFor={name}>
