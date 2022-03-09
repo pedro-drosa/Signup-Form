@@ -35,7 +35,7 @@
   background-color: var(--Blue);
   display: block;
   text-align: center;
-
+  margin-bottom: 30px !important;
   span {
     font-weight: 600;
   }
@@ -45,14 +45,13 @@
   background: var(--White);
   border-radius: 10px;
   padding: 15px 40px;
-
-  max-width: 510px;
+  min-width: 510px;
   box-shadow: 0px 5px 2px 1px rgba(0, 0, 0, 0.2);
 
   p {
     text-align: center;
     color: var(--Grayish-Blue);
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
 
     a {
       color: var(--Red);
