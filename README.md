@@ -38,7 +38,7 @@ Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navega
 
 ## 📄 Acesse aqui
 
-Você pode acessar o app em produção [aqui.](https://dogs.origamid.dev/)
+Você pode acessar o app em produção [aqui.](https://trusting-ritchie-c08027.netlify.app)
 
 ---
 
