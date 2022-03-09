@@ -32,7 +32,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
 - Clone o repositório
 - Instale as dependências com `yarn`
-- Inicie o servidor com `yarn start`
+- Inicie o servidor com `yarn dev`
 
 Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
 
